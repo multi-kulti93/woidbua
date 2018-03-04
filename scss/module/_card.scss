@@ -1,0 +1,44 @@
+// ===================================================
+// Card Module
+// ===================================================
+
+.card {
+    color: $white;
+    align-items: stretch;
+
+    &-deck .card {
+        flex: 1 100%;
+        margin-bottom: 1em;
+
+        @include mq-min("md") {
+            flex: 1 25%;
+        }
+    }
+
+    &-body {
+        display: flex;
+        flex-direction: column;
+        background-color: #222329;
+    }
+
+    &-title {
+        font-size: 1.5em;
+        font-weight: $font-weight--bold;
+        border-bottom: 3px solid $color__heading--primary;
+        width: 100%;
+        text-align: center;
+    }
+
+    &-text ul {
+        margin-left: none;
+        padding-left: 1.5em !important;
+    }
+
+    &-text > ul li {
+        font-size: 1.25em;
+    }
+
+    &-text > ul > li {
+        margin-top: 0.5em;
+    }
+}

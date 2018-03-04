@@ -1,0 +1,40 @@
+// ===================================================
+// Hero Module
+// ===================================================
+
+.hero {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $white;
+    background-color: black;
+    background-image: url("../img/hero.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left bottom;
+    height: 100vh;
+
+    @include mq-min(md) {
+        align-items: flex-end;
+        padding-right: 10%;
+    }
+
+    @include e(container) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    @include e(title) {
+        font-size: 2em;
+        text-align: center;
+    }
+
+
+    @include e(content) {
+        font-size: 1.25em;
+    }
+}

@@ -1,0 +1,7 @@
+#aboutCV {
+    padding-bottom: 2em;
+
+    @include mq-max("md") {
+        padding-bottom: 1em;
+    }
+}

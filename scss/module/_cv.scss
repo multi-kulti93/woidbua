@@ -1,0 +1,34 @@
+// ===================================================
+// CV Module
+// ===================================================
+
+.cv {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+
+    @include mq-max("md") {
+        h2 {
+            padding-top: 0.5em;
+        }
+    }
+
+
+    @include e(container) {
+        padding: 0 0 1em 0;
+    }
+
+
+    @include e(heading) {
+        color: $color__heading--secondary;
+        font-size: 1.25em;
+        font-weight: $font-weight--bold;
+        text-align: center;
+    }
+
+
+    @include e(content) {
+        text-align: center;
+    }
+}

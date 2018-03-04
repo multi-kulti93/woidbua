@@ -1,0 +1,39 @@
+// ===================================================
+// Navbar Module
+// ===================================================
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0);
+    -webkit-transition: background $transition-time--default;
+    -moz-transition: background $transition-time--default;
+    -o-transition: background $transition-time--default;
+    transition: background $transition-time--default;
+
+    &-brand {
+        display: flex;
+        align-items: center;
+        font-family: $font-family--logo;
+        font-size: $font-size--logo;
+
+        & img {
+            height: 1em;
+            margin-right: 0.25em;
+        }
+    }
+
+    &-nav {
+        a {
+            color: $white !important;
+        }
+
+        a:hover {
+            color: $color__heading--primary !important;
+        }
+    }
+}
+
+.active {
+    font-weight: $font-weight--bold;
+}

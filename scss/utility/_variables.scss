@@ -1,0 +1,42 @@
+// ===================================================
+// Utility Variables
+// ===================================================
+
+/* Breakpoints */
+$break-sm: 575px;
+$break-md: 767px;
+$break-lg: 991px;
+$break-xl: 1199px;
+
+/* Colors */
+$white: #FFF;
+$black: #000;
+
+$color__heading--primary: #DFAA0A;
+$color__heading--secondary: #602E0C;
+
+$color-bg--primary: #D5D5D5;
+$color-bg--secondary: #9b9b9b;
+
+/* Flex columns */
+$f-col-count: 12;
+
+/* Fonts */
+$font-family--logo: "Lobster", cursive;
+$font-family--base: "Roboto", sans-serif;
+
+$font-size--base: 16px;
+$font-size--logo: 2.5 * $font-size--base;
+
+$font-weight--light: 300;
+$font-weight--medium: 400;
+$font-weight--bold: 700;
+$font-weight--fat: 900;
+
+/* Path to Assets */
+$path--img: "../img";
+
+/* Transitions */
+$transition-time--default: 500ms;
+$transition-time--slow: 2 * $transition-time--default;
+$transition-time--quick: 1 / 2 * $transition-time--default;
