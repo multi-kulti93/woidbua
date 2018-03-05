@@ -29,6 +29,12 @@ h2 {
   font-weight: 700;
   text-decoration: underline; }
 
+footer {
+  color: #FFF;
+  background-color: #000;
+  padding: 1em 0;
+  text-align: center; }
+
 #aboutCV {
   padding-bottom: 2em; }
   @media (max-width: 767px) {
@@ -39,6 +45,17 @@ h2 {
   padding: 40px 0; }
   .section__about {
     background-color: #D5D5D5; }
+  .section__projects {
+    background-color: #9b9b9b; }
+  .section__contact {
+    color: #FFF;
+    background-image: url("../img/bg_contact.jpg");
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center; }
 
 .hero {
   position: relative;
@@ -136,5 +153,22 @@ h2 {
     font-size: 1.25em; }
   .card-text > ul > li {
     margin-top: 0.5em; }
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  right: 0;
+  left: 0;
+  bottom: 0; }
+.carousel__textContainer ul {
+  margin-bottom: 0; }
+.carousel__textHeader {
+  font-size: 1.1em;
+  font-weight: 700;
+  text-decoration: underline; }
+.carousel__textContent {
+  padding-bottom: 1em; }
+
+.hr--light {
+  border-color: #FFF; }
 
 /*# sourceMappingURL=main.css.map */

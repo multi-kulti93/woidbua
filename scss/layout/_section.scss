@@ -4,4 +4,21 @@
     @include e(about) {
         background-color: $color-bg--primary;
     }
+
+
+    @include e(projects) {
+        background-color: $color-bg--secondary;
+    }
+
+
+    @include e(contact) {
+        color: $white;
+        background-image: url("../img/bg_contact.jpg");
+        background-color: rgba(black, 0.4);
+        background-blend-mode: multiply;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+    }
 }

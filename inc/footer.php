@@ -1,3 +1,7 @@
+<footer>
+    &copy; powered by <b>woidbua</b>
+</footer>
+
 <!-- JavaScript -->
 <!-- jQuery -->
 <script src="js/jquery-3.3.1.min.js"></script>

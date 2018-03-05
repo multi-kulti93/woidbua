@@ -1,9 +1,9 @@
 // ===================================================
-// Imports
+// hr Module
 // ===================================================
-@import "hero";
-@import "navbar";
-@import "cv";
-@import "card";
-@import "carousel";
-@import "hr";
+
+.hr {
+    &--light {
+        border-color: $white;
+    }
+}

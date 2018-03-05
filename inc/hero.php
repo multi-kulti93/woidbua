@@ -2,6 +2,6 @@
     <div class="hero__container">
         <span class="hero__title">Softwareentwickler / Webdesigner</span>
         <p class="hero__content">aus'm bayerischen Woid</p>
-        <button class="btn btn-success">Kontaktier den feschn bua</button>
+        <a class="btn btn-success" href="#kontakt">Kontaktier den feschn bua</a>
     </div>
 </div>

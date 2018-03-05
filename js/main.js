@@ -1,10 +1,18 @@
+// hide hero text at the beginning
+$(".hero__container").css({ 'opacity': '0', 'margin-bottom': '200px' });
+
+// hide carousel text at the beginning
+$(".carousel-caption").hide();
+
 $(document).ready(function () {
+
+    // fade in the hero text
     $(".hero__container").animate({
-        'opacity': "0",
-    }, 0).animate({
-        'opacity': "1"
+        'opacity': "1",
+        'margin-bottom': "0px"
     }, 2000);
 
+    // fade hero and set background for menu on mobile view
     $('#navbarHeaderCollapsable').on('show.bs.collapse', function (e) {
         $('.hero').fadeTo(500, 0.5);
         $('#navbarHeader').css('backgroundColor', 'black');
@@ -15,11 +23,32 @@ $(document).ready(function () {
         $('#navbarHeader').css('backgroundColor', 'transparent');
     });
 
+    // show carousel text on hover
+    $("#carouselNahfeldscanner").on("mouseover", function () {
+        $(this).find(".carousel-caption").fadeIn();
+    });
+    $("#carouselNahfeldscanner").on("mouseleave", function () {
+        $(this).find(".carousel-caption").fadeOut();
+    });
+    $("#carouselRechnungsprogramm").on("mouseover", function () {
+        $(this).find(".carousel-caption").fadeIn();
+    });
+    $("#carouselRechnungsprogramm").on("mouseleave", function () {
+        $(this).find(".carousel-caption").fadeOut();
+    });
+    $("#carouselProgWiki").on("mouseover", function () {
+        $(this).find(".carousel-caption").fadeIn();
+    });
+    $("#carouselProgWiki").on("mouseleave", function () {
+        $(this).find(".carousel-caption").fadeOut();
+    });
+
     // Select all links with hashes
     $('a[href*="#"]')
         // Remove links that don't actually link to anything
         .not('[href="#"]')
         .not('[href="#0"]')
+        .not('[href^="#carousel"]')
         .click(function (event) {
             // On-page links
             if (

@@ -1,0 +1,28 @@
+// ===================================================
+// Carousel Module
+// ===================================================
+
+.carousel {
+    &-caption {
+        background-color: rgba($black, 0.5);
+        right: 0;
+        left: 0;
+        bottom: 0;
+    }
+
+    &__textContainer {
+        ul {
+            margin-bottom: 0;
+        }
+    }
+
+    &__textHeader {
+        font-size: 1.1em;
+        font-weight: $font-weight--bold;
+        text-decoration: underline;
+    }
+
+    &__textContent {
+        padding-bottom: 1em;
+    }
+}

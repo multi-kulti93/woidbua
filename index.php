@@ -12,80 +12,52 @@
         <h1 id="about">About</h1>
         <?php include("inc/cv.php"); ?>
 
-        <h2>Programmierkenntnisse</h2>
-        <div class="container">
-            <div class="row align-items-stretch">
-                <div class="card-deck">
-                    <div class="card">
-                        <img class="card-img-top" src="img/skills_mikrocontroller.jpg" alt="Mikrocontroller Fertigkeiten">
-                        <div class="card-body">
-                            <span class="card-title">Mikrocontroller</span>
-                            <div class="card-text">
-                                <ul>
-                                    <li>Assembler</li>
-                                    <li>C</li>
-                                    <ul>
-                                        <li>Atmel Studio</li>
-                                    </ul>
-                                    <li>C++</li>
-                                    <ul>
-                                        <li>Arduino</li>
-                                    </ul>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img class="card-img-top" src="img/skills_webdesign.png" alt="Webdesign Fertigkeiten">
-                        <div class="card-body">
-                            <span class="card-title">Webdesign</span>
-                            <div class="card-text">
-                                <ul>
-                                    <li>HTML</li>
-                                    <li>CSS / Sass</li>
-                                    <li>JavaScript / jQuery</li>
-                                    <li>AJAX / JSON</li>
-                                    <li>Node.js</li>
-                                    <li>Bootstrap</li>
-                                    <li>PHP</li>
-                                    <li>ASP.NET</li>
-                                    <li>Laravel</li>
-                                    <li>WordPress</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img class="card-img-top" src="img/skills_sonstiges.jpg" alt="Sonstige Fertigkeiten">
-                        <div class="card-body">
-                            <span class="card-title">Sonstiges</span>
-                            <div class="card-text">
-                                <ul>
-                                    <li>C#</li>
-                                    <ul>
-                                        <li>WinForms</li>
-                                        <li>WPF</li>
-                                    </ul>
-                                    <li>Datenbanken</li>
-                                    <ul>
-                                        <li>SQL</li>
-                                        <li>MongoDB</li>
-                                    </ul>
-                                    <li>Git & GitHub</li>
-                                    <li>Java</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <?php include("inc/programmierkenntnisse.php"); ?>
     </div>
 </div>
 
 <!-- Projekte -->
+<div class="section section__projects">
+    <div class="container">
+        <?php include("./inc/projects.php"); ?>
+    </div>
+</div>
 
 <!-- Kontakt -->
+<div class="section section__contact">
+    <div class="container">
+        <h1 id="kontakt">Kontakt</h1>
+        <div class="row">
+            <div class="col-sm-4 text-center">
+                <i class="fa fa-home" aria-hidden="true"></i>
+                Schmidstraße 14, 94234 Viechtach
+            </div>
+            <div class="col-sm-4 text-center">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                +49 160 / 55-07-869
+            </div>
+            <div class="col-sm-4 text-center">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                andre.multerer@gmail.com
+            </div>
+        </div>
+        <hr class="hr--light">
+        <form>
+            <div class="form-group">
+                <label for="contactName">Name</label>
+                <input type="text" class="form-control" id="contactName">
+            </div>
+            <div class="form-group">
+                <label for="contactEmail">Email</label>
+                <input type="email" class="form-control" id="contactEmail">
+            </div>
+            <div class="form-group ">
+                <label for="contactText">Nachricht</label>
+                <textarea id="contactText" class="form-control" rows="10" placeholder="Ihr Anliegen"></textarea>
+            </div>
+            <button type="submit" class="btn btn-success w-100">Absenden</button>
+        </form>
+    </div>
+</div>
 
 <?php require("inc/footer.php"); ?>

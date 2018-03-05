@@ -14,16 +14,16 @@
     <div class="navbar-collapse collapse justify-content-end" id="navbarHeaderCollapsable">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link active" href="#">Home</a>
+                <a class="nav-link active" href="<?php echo BASE_DIR; ?>">Home</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Projekte</a>
+                <a class="nav-link" href="#projekte">Projekte</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Kontakt</a>
+                <a class="nav-link" href="#kontakt">Kontakt</a>
             </li>
         </ul>
     </div>
